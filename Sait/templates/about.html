@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    {% include "settings.html" %}
+    <title>О сайте</title>
+</head>
+
+<body>
+
+{% include "header.html" %}
+
+<div class="main">
+    <div class="container">
+        <h2>
+            О сайте
+        </h2>
+        <h1 class="sector_name">
+            {{pagename}}
+        </h1>
+        <section>
+            <h4>
+                <p>
+                    {{Main_Info}}
+                </p>
+            </h4>
+        </section>
+        <section>
+            {% for Info_Sector in Info_Arr %}
+            <h3 class="sector_name">{{ Info_Sector.Info_Name }}</h3>
+            <h4>
+                <p>
+                    {{Info_Sector.Info}}
+                </p>
+            </h4>
+            {% endfor %}
+        </section>
+    </div>
+</div>
+
+</body>
+</html>

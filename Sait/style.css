@@ -1,0 +1,225 @@
+body{
+    margin: 0;
+    /*overflow-x: hidden ;*/
+    text-shadow: black 1px 1px 0, black -1px -1px 0,
+    black -1px 1px 0, black 1px -1px 0;
+}
+
+.main {
+    position: fixed;
+    top: 77px;
+    width: 100%;
+    height: 90%;
+    background: url("images/main1.jpg") center no-repeat;
+    overflow: auto;
+    -webkit-background-size: cover;
+    background-size: cover;
+
+    color: #ffdb01;
+}
+
+.header {
+    width: 100%;
+    height: 77px;
+    background: url("images/h2.png") repeat;
+    background-size: auto 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+
+.container {
+    padding: 10px 80px 60px 80px;
+}
+
+.logo {
+    padding: 10px 10px 10px 20px;
+    position: absolute;
+    top: 0px;
+    z-index: 1100;
+}
+
+.head-logo {
+    padding: 20px 10px 20px 10px;
+    position: absolute;
+    top: 0px;
+    left: 90px;
+    width: 130px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffdb01;
+    font-family: 'Lobster', cursive;
+
+    text-decoration: none;
+    border: 1px #fff;
+}
+
+.nav {
+    position: fixed;
+
+    left: 650px;
+    top: 22px;
+    font-size: 25px;
+    font-weight: 700;
+    min-width: 1200px;
+}
+
+@media screen and (max-width: 1020px) {
+    .nav {
+        left: 550px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .nav {
+        left: 450px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .nav {
+        left: 350px;
+    }
+}
+
+
+.nav-link {
+    padding: 1em 30px 1em 30px;
+
+    color: #ffdb01;
+    text-decoration: none;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    transition: color 0.6s linear, background-color 0.6s linear;
+}
+
+.nav-link:hover {
+    color: #cbc007;
+    background: rgba(0, 0, 0, .3);
+}
+
+h2 {
+    font-family: 'DM Serif Display', serif;
+}
+
+.sector_name {
+    text-align: center;
+}
+
+table.contacts {
+    width: 100%;
+    border-spacing: 0;
+}
+
+table.contacts td {
+    width: 50%;
+    vertical-align: top;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #ffdb01;
+    text-decoration: none;
+}
+
+.cont_adr {
+    color: #ffdb01;
+    text-decoration: none;
+    /*transition: text-shadow 0.6s linear;*/
+}
+
+.cont_adr:hover {
+    text-shadow: red 1px 1px 0;
+}
+
+table.with {
+    width: 100%;
+}
+
+table.with td {
+    width: 50%;
+    vertical-align: top;
+}
+
+table.name_info {
+    width: 100%;
+    background: rgba(100%,100%,100%,0.1);
+    border-spacing: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+table.name_info td {
+    text-align: center;
+    color: #ffdb01;
+    text-decoration: none;
+    vertical-align: top;
+}
+
+table.three_col {
+    width: 100%;
+    border-spacing: 10px;
+    vertical-align: top;
+    background: rgba(100%,100%,100%,0.1);
+}
+
+table.three_col td {
+    width: 33%;
+    text-align: center;
+    color: #ffdb01;
+    text-decoration: none;
+    vertical-align: top;
+}
+
+table.four_col {
+    width: 100%;
+    border-spacing: 10px;
+    vertical-align: top;
+    background: rgba(100%,100%,100%,0.1);
+}
+
+table.four_col td {
+    width: 25%;
+    text-align: center;
+    color: #ffdb01;
+    vertical-align: top;
+}
+
+table.rates {
+    width: 100%;
+    border-spacing: 10px;
+    vertical-align: top;
+    background: rgba(100%,100%,100%,0.1);
+}
+
+table.rates td {
+    width: 33%;
+    text-align: center;
+    color: #ffdb01;
+    vertical-align: top;
+}
+
+input.one {
+    width: 20px;
+}
+
+table.two_no_back {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+table.two_no_back td {
+    text-align: center;
+    color: #ffdb01;
+    vertical-align: top;
+}
+
+input.rate {
+    width: 100px;
+}
+
+footer {
+    color: gold;
+    vertical-align: top;
+}

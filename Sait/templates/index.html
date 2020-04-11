@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    {% include "settings.html" %}
+    <title>BarcaBet</title>
+</head>
+
+
+<body>
+
+{% include "header.html" %}
+
+<div class="main">
+    <div class="container">
+        <h2>
+            Аккаунт
+        </h2>
+        <h4>
+            <table class="with">
+                <tr>
+                    <td>
+                        <table class="name_info">
+                            <tr>
+                                <td colspan="2"><h3>Данные пользователя</h3></td>
+                            </tr>
+                            <tr>
+                                <td>Имя:</td>
+                                <td>{{Name}}</td>
+                            </tr>
+                            <tr>
+                                <td>Номер аккаунта:</td>
+                                <td>{{Account_Num}}</td>
+                            </tr>
+                            <tr>
+                                <td>Текущий баланс</td>
+                                <td>{{Balance}} $</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table class="three_col">
+                            <tr>
+                                <td colspan="3"><h3>Последние ставки</h3></td>
+                            </tr>
+                            <tr>
+                                <td>Ставка:</td>
+                                <td>Событие:</td>
+                                <td>Результат:</td>
+                            </tr>
+
+                            {% for Rate in Last_Rates_Arr %}
+                            <tr>
+                                <td>{{Rate.Sum}} $</td>
+                                <td>{{Rate.Event}}</td>
+                                <td>{{Rate.Result}} $</td>
+                            </tr>
+                            {% endfor %}
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </h4>
+    </div>
+</div>
+</body>
+</html>

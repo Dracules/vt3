@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    {% include "settings.html" %}
+    <title>Ставки</title>
+</head>
+
+
+<body>
+
+{% include "header.html" %}
+
+
+<div class="main">
+    <div class="container">
+        <h2>
+            Ставки
+        </h2>
+        <h4>
+            <table class="with">
+                <tr>
+                    <td>
+                        <table class="four_col">
+                            <tr>
+                                <td colspan="4"><h3>Ставка на результат</h3></td>
+                            </tr>
+                            <tr>
+                                <td>Барселона</td>
+                                <td></td>
+                                <td>Соперник</td>
+                                <td>Коэффициент</td>
+                            </tr>
+                            <tr>
+                                <td><input class="one" type="text" name="num_barca_g"  maxlength="2" required></td>
+                                <td>:</td>
+                                <td><input class="one" type="text" name="num_sop_g"  maxlength="2" required></td>
+                                <td>3.4</td>
+                            </tr>
+
+                            <tr>
+                                <td>Ставка</td>
+                                <td colspan="2">
+                                    <input class="rate" type="text" name="rate"  maxlength="7" required><label> $</label>
+                                </td>
+                                <td><button>Подтвердить</button></td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table class="four_col">
+                            <tr>
+                                <td colspan="4"><h3>Индивидуальные</h3></td>
+                            </tr>
+                            <tr>
+                                <td>Игрок</td>
+                                <td colspan="2">Событие</td>
+                                <td>Коэффициент</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select name="player">
+                                        <option value="Тер-Штеген">Тер-Штеген</option>
+                                        <option value="Семеду">Семеду</option>
+                                        <option value="Пике">Пике</option>
+                                        <option value="Ракитич">Ракитич</option>
+                                        <option value="Бускетс">Бускетс</option>
+                                        <option value="Артур">Артур</option>
+                                        <option value="Суарес">Суарес</option>
+                                        <option value="Месси">Месси</option>
+                                        <option value="Гризман">Гризман</option>
+                                        <option value="Ленгле">Ленгле</option>
+                                        <option value="Альба">Альба</option>
+                                        <option value="Де Йонг">Де Йонг</option>
+                                        <option value="Видаль">Видаль</option>
+                                        <option value="Фати">Фати</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select name="event">
+                                        <option value="Г">Г</option>
+                                        <option value="П">ГП</option>
+                                        <option value="У">У</option>
+                                        <option value="ЖК">ЖК</option>
+                                        <option value="КК">КК</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <label>X<input class="one" type="text" name="num_events"  maxlength="2" required></label>
+                                </td>
+                                <td>
+                                    2.2
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Ставка</td>
+                                <td colspan="2">
+                                    <input class="rate" type="text" name="rate"  maxlength="7" required><label> $</label>
+                                </td>
+                                <td><button>Подтвердить</button></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table class="four_col">
+                            <tr>
+                                <td colspan="4"><h3>Тотал</h3></td>
+                            </tr>
+                            <tr>
+                                <td>Тотал</td>
+                                <td>Событие</td>
+                                <td>Клуб/Игрок</td>
+                                <td>Коэффициент</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table class="two_no_back">
+                                        <tr>
+                                            <td>
+                                                <select name="total">
+                                                    <option value="+">+</option>
+                                                    <option value="-">-</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <input class="one" type="text" name="total_num"  maxlength="2" required>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td>
+                                    <select name="event">
+                                        <option value="Г">Г</option>
+                                        <option value="П">ГП</option>
+                                        <option value="У">У</option>
+                                        <option value="ЖК">ЖК</option>
+                                        <option value="КК">КК</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select name="player">
+                                        <option value="Барселона">Барселона</option>
+                                        <option value="Тер-Штеген">Тер-Штеген</option>
+                                        <option value="Семеду">Семеду</option>
+                                        <option value="Пике">Пике</option>
+                                        <option value="Ракитич">Ракитич</option>
+                                        <option value="Бускетс">Бускетс</option>
+                                        <option value="Артур">Артур</option>
+                                        <option value="Суарес">Суарес</option>
+                                        <option value="Месси">Месси</option>
+                                        <option value="Гризман">Гризман</option>
+                                        <option value="Ленгле">Ленгле</option>
+                                        <option value="Альба">Альба</option>
+                                        <option value="Де Йонг">Де Йонг</option>
+                                        <option value="Видаль">Видаль</option>
+                                        <option value="Фати">Фати</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    1.5
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Ставка</td>
+                                <td colspan="2">
+                                    <input class="rate" type="text" name="rate"  maxlength="7" required><label> $</label>
+                                </td>
+                                <td><button>Подтвердить</button></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </h4>
+    </div>
+</div>
+</body>
+</html>
